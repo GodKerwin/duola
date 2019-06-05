@@ -1,0 +1,9 @@
+dependencies {
+    compile project(":duola-framework"), project(":duola-quartz"), project(":duola-generator")
+
+    compile(
+            //SpringBoot集成thymeleaf模板
+            "org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}",
+            "org.springframework.boot:spring-boot-devtools:${springBootVersion}",
+    )
+}

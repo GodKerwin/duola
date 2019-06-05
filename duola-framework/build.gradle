@@ -1,0 +1,13 @@
+description = 'framework框架核心'
+dependencies {
+    compile project(":duola-common"), project(":duola-system")
+
+    compile(
+            //SpringBoot Web容器
+            "org.springframework.boot:spring-boot-starter-web:${springBootVersion}",
+            //SpringBoot 拦截器
+            "org.springframework.boot:spring-boot-starter-aop:${springBootVersion}",
+            //alibaba的druid数据库连接池
+            "com.alibaba:druid-spring-boot-starter:${druidVersion}",
+    )
+}

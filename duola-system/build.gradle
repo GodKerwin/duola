@@ -1,0 +1,11 @@
+description = 'system系统模块'
+dependencies {
+    compile project(":duola-common")
+
+    compile(
+            //Mysql驱动包
+            "mysql:mysql-connector-java:${mysqlVersion}",
+            //Mybatis
+            "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatisVersion}",
+    )
+}

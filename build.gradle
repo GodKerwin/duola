@@ -1,0 +1,61 @@
+apply from: "config.gradle"
+
+description = '朵啦管理系统'
+//插件地址
+buildscript {
+    ext {
+        springBootVersion = '2.1.5.RELEASE'
+    }
+    repositories {
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+//配置所有项目
+allprojects {
+
+    //应用插件
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+
+    //公共属性
+    group 'com.xul'
+    version '1.0-SNAPSHOT'
+
+    //编译属性
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    // java编译的时候缺省状态下会因为中文字符而失败
+    [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+}
+
+//构建依赖
+subprojects {
+
+    repositories {
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        mavenCentral()
+        mavenLocal()
+    }
+
+    dependencies {
+        compile(
+                //springboot官方包
+                "org.springframework.boot:spring-boot-dependencies:${springBootVersion}",
+        )
+        testCompile(
+                "org.springframework.boot:spring-boot-starter-test:${springBootVersion}",
+                "junit:junit:${junitVersion}"
+        )
+    }
+}

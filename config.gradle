@@ -1,0 +1,75 @@
+//ext {
+//    //parent
+//    duoLaVersion = '1.0.0'
+//    junitVersion = '4.12'
+//
+//    //common
+//    kaptchaVersion = '2.3.2'
+//    shiroVersion = '1.4.1'
+//    thymeleafShiroVersion = '2.0.0'
+//    bitwalkerVersion = '1.21'
+//    pagehelperVersion = '1.2.11'
+//    oshiVersion = '3.13.2'
+//    jnaVersion = '5.3.1'
+//    swaggerVersion = '2.9.2'
+//    commonsIoVersion = '2.6'
+//    fileUploadVersion = '1.4'
+//    jsoupVersion = '1.12.1'
+//    poiVersion = '4.1.0'
+//    springVersion = '5.1.7.RELEASE'
+//    jacksonVersion = '2.9.9'
+//    yamlVersion = '1.24'
+//    servletVersion = '4.0.1'
+//    apacheVersion = '3.8.1'
+//
+//    //framework
+//    druidVersion = '1.1.10'
+//
+//    //generator
+//    velocityVersion = '1.7'
+//
+//    //quartz
+//    quartzVersion = '2.3.1'
+//
+//    //system
+//    mysqlVersion = '8.0.16'
+//    mybatisVersion = '1.3.2'
+//}
+
+ext {
+    //parent
+    duoLaVersion = '1.0.0'
+    junitVersion = '4.12'
+
+    //common
+    kaptchaVersion = '2.3.2'
+    shiroVersion = '1.4.0'
+    thymeleafShiroVersion = '2.0.0'
+    bitwalkerVersion = '1.19'
+    pagehelperVersion = '1.2.5'
+    oshiVersion = '3.9.1'
+    jnaVersion = '5.3.1'
+    swaggerVersion = '2.7.0'
+    commonsIoVersion = '2.5'
+    fileUploadVersion = '1.3.3'
+    jsoupVersion = '1.11.3'
+    poiVersion = '3.17'
+    springVersion = '5.1.7.RELEASE'
+    jacksonVersion = '2.9.9'
+    yamlVersion = '1.24'
+    servletVersion = '4.0.1'
+    apacheVersion = '3.8.1'
+
+    //framework
+    druidVersion = '1.1.10'
+
+    //generator
+    velocityVersion = '1.7'
+
+    //quartz
+    quartzVersion = '2.3.1'
+
+    //system
+    mysqlVersion = '8.0.16'
+    mybatisVersion = '1.3.2'
+}

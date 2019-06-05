@@ -1,0 +1,9 @@
+description = 'generator代码生成'
+dependencies {
+    compile project(":duola-common")
+
+    compile(
+            //velocity代码生成使用模板
+            "org.apache.velocity:velocity:${velocityVersion}",
+    )
+}

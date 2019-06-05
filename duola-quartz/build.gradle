@@ -1,0 +1,9 @@
+description = 'quartz定时任务'
+dependencies {
+    compile project(":duola-common")
+
+    //定时任务
+    compile("org.quartz-scheduler:quartz:${quartzVersion}") {
+        exclude group: 'com.mchange'
+    }
+}

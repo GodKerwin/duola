@@ -1,0 +1,8 @@
+rootProject.name = 'duola'
+include 'duola-admin'
+include 'duola-common'
+include 'duola-framework'
+include 'duola-generator'
+include 'duola-quartz'
+include 'duola-system'
+
